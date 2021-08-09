@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>A Basic HTML5 Template</title>
+    <!-- my own css for this project-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- import bootstrap 5 css from cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- import bootstrap javascript from cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!--import fonts from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(31, 28, 28);
+        }
+
+        .brand {
+            margin-left: 1rem;
+        }
+
+        .shift-right {
+            margin-left: auto;
+        }
+
+        .handwrite-font-fam {
+            font-family: "Satisfy", cursive;
+            letter-spacing: 0.2rem;
+            text-transform: capitalize;
+            font-weight: bolder;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .inverter {
+            filter: invert(100);
+            padding: 0px;
+            height: 2px;
+        }
+
+        #toggler {
+            height: 2rem;
+            width: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand brand handwrite-font-fam" href="index.html">Mrrp's Profile</a>
+        <ul id="navlinks" class="navbar-nav shift-right">
+            <li><a href="#" class="nav-link handwrite-font-fam ">Home</a></li>
+            <li class="nav-item handwrite-font-fam "><a href="#" class="nav-link">Skills </a></li>
+            <li class="nav-item handwrite-font-fam "><a href="#" class="nav-link">Projects</a></li>
+            <li class="nav-item handwrite-font-fam "><a href="#" class="nav-link">Contact-me</a></li>
+        </ul>
+        <button id="toggler" class="btn  btn-secondary shift-right inverter">
+            | | |
+        </button>
+    </nav>
+
+</body>
+<script>
+    var toggler = document.getElementById('toggler');
+    var navlinks = document.getElementById('navlinks');
+    var clicked = false;
+
+    function checker() {
+        var screenwidth = screen.width;
+        if (screenwidth < 1000) {
+            toggler.classList.remove('hide');
+            if (clicked == false)
+                navlinks.classList.add('hide');
+        } else {
+            toggler.classList.add('hide');
+            if (screenwidth >= 1000)
+                navlinks.classList.remove('hide');
+        }
+    }
+
+    toggler.addEventListener('click', () => {
+        clicked = true;
+        navlinks.classList.toggle('hide');
+    });
+
+    setInterval(checker, 0);
+</script>
+
+</html>
