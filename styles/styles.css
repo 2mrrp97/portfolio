@@ -73,7 +73,7 @@ body {
 }
 
 #pp {
-  height: 30vh;
+  height: 10rem;
   margin: 20px;
   border-radius: 23% 77% 75% 25% / 53% 31% 69% 47%;
   outline: none;
@@ -141,7 +141,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -155,7 +155,7 @@ body {
   justify-content: space-between;
   width: 90vw;
   min-height: 65vh;
-  margin: 62px;
+  margin: 0;
   height: 80vh;
 }
 
@@ -325,8 +325,4 @@ body {
 
 .towhite {
   color: black;
-}
-
-.make-space-for-nav {
-  margin-top: 0;
 }
