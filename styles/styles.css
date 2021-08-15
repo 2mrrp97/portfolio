@@ -2,14 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 .about {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: block;
   text-align: center;
   user-select: none;
-  margin: 20px auto;
+  margin: 20px;
   width: 100%;
-  min-height: 20vh;
 }
 body {
   background-color: rgb(255, 247, 247);
@@ -77,14 +74,18 @@ body {
 
 #pp {
   height: 30vh;
-  margin: 20px auto;
+  margin: 20px;
   border-radius: 23% 77% 75% 25% / 53% 31% 69% 47%;
   outline: none;
-  box-shadow: 1px 5px 1px #f1f1f1;
+  transition: 0.5s all ease;
+  box-shadow: 1px 10px 1px #f1f1f1;
   border: 0px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
-
+#pp:hover {
+  height: 11rem;
+  box-shadow: 1px 10px 10px #f1f1f1;
+}
 .seperator {
   border-top: 5px solid white;
   border-style: groove;
@@ -137,9 +138,10 @@ body {
 
 .container-fluid {
   background-color: rgb(31, 30, 30);
-
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  min-height: 30vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -153,7 +155,8 @@ body {
   justify-content: space-between;
   width: 90vw;
   min-height: 65vh;
-  margin: 0;
+  margin: 62px;
+  height: 80vh;
 }
 
 @media (max-width: 1000px) {
@@ -166,16 +169,12 @@ body {
     align-items: center;
     transform: translateX(-150%);
     transition: transform 0.3s ease;
-    background-color: black;
-    width: 30vw;
   }
   #toggler {
     display: inline-block;
   }
 }
 
-@media (max-width: 950px) {
-}
 .fade-in {
   transform: translateX(0%);
 }
@@ -237,6 +236,7 @@ body {
   box-sizing: border-box;
   width: 80vw;
   margin: 20px auto;
+  min-height: 140vh;
 }
 .prj-container > h3 {
   color: rgb(201, 199, 199);
@@ -325,4 +325,8 @@ body {
 
 .towhite {
   color: black;
+}
+
+.make-space-for-nav {
+  margin-top: 0;
 }
