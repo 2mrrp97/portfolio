@@ -73,19 +73,15 @@ body {
 }
 
 #pp {
-  height: 10rem;
-  margin: 20px;
+  height: 15rem;
+  margin: 20px auto;
   border-radius: 23% 77% 75% 25% / 53% 31% 69% 47%;
   outline: none;
-  transition: 0.5s all ease;
-  box-shadow: 1px 10px 1px #f1f1f1;
+  box-shadow: 1px 5px 1px #f1f1f1;
   border: 0px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
-#pp:hover {
-  height: 11rem;
-  box-shadow: 1px 10px 10px #f1f1f1;
-}
+
 .seperator {
   border-top: 5px solid white;
   border-style: groove;
@@ -138,8 +134,7 @@ body {
 
 .container-fluid {
   background-color: rgb(31, 30, 30);
-  background-position: center;
-  background-repeat: no-repeat;
+
   background-size: cover;
   min-height: 30vh;
   display: flex;
