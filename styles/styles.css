@@ -156,7 +156,6 @@ body {
   width: 90vw;
   min-height: 65vh;
   margin: 0;
-  height: 80vh;
 }
 
 @media (max-width: 1000px) {
@@ -236,7 +235,6 @@ body {
   box-sizing: border-box;
   width: 80vw;
   margin: 20px auto;
-  min-height: 140vh;
 }
 .prj-container > h3 {
   color: rgb(201, 199, 199);
