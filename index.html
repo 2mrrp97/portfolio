@@ -27,43 +27,37 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand brand handwrite-font-fam logo" href="index.html">Mrrp's Profile</a>
+        <ul id="navlinks" class="navbar-nav shift-right">
+            <li class="nav-item  "><a href="index.html" class="nav-link handwrite-font-fam ">Home</a></li>
+            <li class="nav-item  "><a href="#skills" class="nav-link handwrite-font-fam">Skills </a></li>
+            <li class="nav-item  "><a href="#prj-sec" class="nav-link handwrite-font-fam">Projects</a></li>
+            <li class="nav-item  "><a href="#contact" class="nav-link handwrite-font-fam">Contact-me</a></li>
+        </ul>
+        <button id="toggler" class="btn  btn-secondary shift-right">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </button>
+    </nav>
 
-    <section class="container-fluid">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand brand handwrite-font-fam logo" href="index.html">Mrrp's Profile</a>
-            <ul id="navlinks" class="navbar-nav shift-right">
-                <li class="nav-item  "><a href="index.html" class="nav-link handwrite-font-fam ">Home</a></li>
-                <li class="nav-item  "><a href="#skills" class="nav-link handwrite-font-fam">Skills </a></li>
-                <li class="nav-item  "><a href="#prj-sec" class="nav-link handwrite-font-fam">Projects</a></li>
-                <li class="nav-item  "><a href="#contact" class="nav-link handwrite-font-fam">Contact-me</a></li>
-            </ul>
-            <button id="toggler" class="btn  btn-secondary shift-right">
-                <div class="lines"></div>
-                <div class="lines"></div>
-                <div class="lines"></div>
-            </button>
-        </nav>
-        <!--
-        <video class="video-container" muted autoplay loop>
-            <source src=" ./images/Pexels Videos 2257012.mp4 " type="video/mp4">
-        </video>
-        -->
-        <div class="title-container">
-            <div style="height : 30vh; width : 50rem; margin : 0 auto;">
-                <h2 class="about handwrite-font-fam">
+    <div class="title-container">
+
+        <div class="about">
+            <div style="width : 50rem; height : 10rem ; margin : 20px auto;">
+                <h2 class=" handwrite-font-fam">
                     "Hello ! I am <span style="color : red ; font-style: italic;">Subhro Sen</span> , A Web
                     Developer" -
                     me
                 </h2>
-                <h4 id="d" class="about handwrite-font-fam">
+                <h4 id="d" class="handwrite-font-fam">
                 </h4>
             </div>
             <img id="pp" src="./images/pp.jpg" alt="Profile Picture">
-
-
         </div>
-    </section>
 
+    </div>
     <hr class="seperator">
 
     <h2 id="skills" style=" text-align : center; " class="towhite">Skills</h2>
@@ -122,11 +116,11 @@
 
     <section id="prj-sec">
         <div id="prj" class="prj-container">
-            <h3>Project Gallery</h3>
+            <h3 style="margin:20px auto;">Project Gallery</h3>
             <div id="slider" class="sliderclass">
 
                 <img id="slidercontent" src="./images/register.png" alt="" class="slider-img">
-                <h3 id="project-name" class="btn btn-outline-light hide-visit-btn">Content</h3>
+
                 <button id="goprj" class="btn btn-outline-light hide-visit-btn">
                     <a id="redirect-link" href="" class="nav-link">
                         View Full Project
@@ -136,7 +130,7 @@
 
             <div id="slider-btns">
                 <button id="prev-btn" class="btn btn-outline-light">Prev</button>
-                <button id="prev-btn" class="btn btn-dark">View All Projects</button>
+                <button id="prev-btn" class="btn btn-outline-light">View All Projects</button>
                 <button id="next-btn" class="btn btn-outline-light">Next</button>
             </div>
         </div>
@@ -189,4 +183,4 @@
 <script defer src="./scripts/script.js">Yolo</script>
 <script defer src="./scripts/slider.js">Yolo</script>
 
-</html> 
+</html>
