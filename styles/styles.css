@@ -2,19 +2,27 @@ html {
   scroll-behavior: smooth;
 }
 .about {
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   user-select: none;
-  margin: 20px;
   width: 100%;
 }
 body {
   background-color: rgb(255, 247, 247);
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 .navbar {
+  background-color: rgb(31, 30, 30);
   padding: 20px;
+  position: sticky;
+  top: 0px;
+  width: 100vw;
 }
 
 .brand {
@@ -31,6 +39,7 @@ body {
   text-transform: capitalize;
   font-weight: bolder;
   color: rgb(218, 218, 218);
+  text-align: center;
 }
 
 .hide {
@@ -65,7 +74,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin: 100px auto;
-  width: 70vw;
+  width: 100vw;
   padding: 50px;
   transition: 0.3s ease;
   box-sizing: border-box;
@@ -73,19 +82,15 @@ body {
 }
 
 #pp {
-  height: 10rem;
-  margin: 20px;
+  height: 30vh;
+  margin: 20px auto;
   border-radius: 23% 77% 75% 25% / 53% 31% 69% 47%;
   outline: none;
   transition: 0.5s all ease;
-  box-shadow: 1px 10px 1px #f1f1f1;
+  box-shadow: 1px 10px 5px #f1f1f1;
   border: 0px;
-  margin: 0 auto;
 }
-#pp:hover {
-  height: 11rem;
-  box-shadow: 1px 10px 10px #f1f1f1;
-}
+
 .seperator {
   border-top: 5px solid white;
   border-style: groove;
@@ -137,26 +142,21 @@ body {
 }
 
 .container-fluid {
-  background-color: rgb(31, 30, 30);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 30vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0px;
 }
 
 .title-container {
-  display: inherit;
-  flex-direction: row;
+  background-color: rgb(31, 30, 30);
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 90vw;
-  min-height: 65vh;
-  margin: 0;
-  height: 80vh;
+  width: 100vw;
+  min-height: 80vh;
 }
 
 @media (max-width: 1000px) {
@@ -207,6 +207,7 @@ body {
   width: 80%;
   display: flex;
   height: 80%;
+  margin: 20px auto;
 }
 
 .faded-img {
@@ -236,7 +237,7 @@ body {
   box-sizing: border-box;
   width: 80vw;
   margin: 20px auto;
-  min-height: 140vh;
+  min-height: 60vh;
 }
 .prj-container > h3 {
   color: rgb(201, 199, 199);
@@ -247,6 +248,7 @@ body {
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
+  margin: 20px;
 }
 #prj-sec {
   background-color: rgb(31, 30, 30);
