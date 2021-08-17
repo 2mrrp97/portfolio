@@ -207,12 +207,11 @@ body {
 }
 
 .sliderclass {
-  height: 80%;
+  height: 40vh;
   margin: 20px auto;
   overflow: hidden;
   position: relative;
-
-  width: 50%;
+  width: 80vw;
 }
 
 .faded-img {
