@@ -1,15 +1,32 @@
 
-// this part is for checking navbar collapse or not , if collapse add expand funtionality 
-function checker() {
-    var toggler = document.getElementById('toggler');
-    var navlinks = document.getElementById('navlinks');
+// this part is for checking navbar collapse or not , if collapse add expand functionality 
+let body_section = document.getElementById('rest-of-body');
+var toggler = document.getElementById('toggler');
+var navlinks = document.getElementById('navlinks');
 
+function checker() {
     toggler.addEventListener('click', () => {
-        navlinks.classList.toggle('fade-in');
+        if (navlinks.classList.contains('fade-out')) {
+            navlinks.classList.remove('fade-out');
+            body_section.style.marginTop = "11rem"; // push body sec a bit down 
+        }
+        else {
+            navlinks.classList.add('fade-out');
+            body_section.style.marginTop = "0rem"; // push body sec up again
+        }
     });
-}
+};
 
 checker();
+
+// if window width > 1100px reset navlink to org pos and push body_section up
+window.addEventListener('resize', () => {
+    let width = window.innerWidth;
+    if (width >= 1101) {
+        navlinks.classList.remove('fade-out');
+        body_section.style = null;
+    }
+});
 
 // this part for typing text effect 
 var msgElt = document.getElementById('d');
