@@ -7,7 +7,13 @@ const img_links = [{
     path: "./images/bs_prac.png",
     link: "https://mrrpp97.github.io/bootstarp_prac/",
     name: "BootStrap Practice"
-}];
+},
+{
+    path: "./images/clr_flipper.png",
+    link: "https://2mrrp97.github.io/Js-color-flipper/",
+    name: "BootStrap Practice"
+}
+];
 
 
 let nxt = document.getElementById('next-btn');
@@ -24,7 +30,7 @@ function slide_left(element) {
 
     element.src = next_img.path;
     rlink.href = next_img.link;
-    rlink.innerText = "View : " + nxt_img.name;
+
 }
 
 function slide_right(element) {
@@ -33,7 +39,7 @@ function slide_right(element) {
 
     element.src = next_img.path;
     rlink.href = next_img.link;
-    rlink.innerText = "View : " + nxt_img.name;
+
 }
 
 nxt.addEventListener('click', () => {
