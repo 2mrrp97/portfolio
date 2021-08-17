@@ -11,9 +11,13 @@ const img_links = [{
 {
     path: "./images/clr_flipper.png",
     link: "https://2mrrp97.github.io/Js-color-flipper/",
-    name: "BootStrap Practice"
-}
-];
+    name: "Color Flipper"
+},
+{
+    path: "./images/carousel.png",
+    link: "https://2mrrp97.github.io/Carousel-Project/",
+    name: "Carousel Project"
+}];
 
 
 let nxt = document.getElementById('next-btn');
