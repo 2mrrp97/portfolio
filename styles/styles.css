@@ -24,8 +24,14 @@ body {
   top: 0px;
   width: 100vw;
   z-index: 999;
+  outline: none;
+  display: flex;
+  flex-direction: row;
 }
 
+.nav-item {
+  padding: 10px;
+}
 .brand {
   margin-left: 1rem;
 }
@@ -162,24 +168,46 @@ body {
   min-height: 80vh;
 }
 
-@media (max-width: 1000px) {
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  justify-content: space-around;
+}
+.margin-default {
+  margin-top: 0rem;
+}
+
+@media (max-width: 1100px) {
   .navbar-nav {
     position: absolute;
     top: 5rem;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    transform: translateX(-150%);
-    transition: transform 0.3s ease;
+    align-items: flex-start;
+    transform: translateY(0%);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgb(31, 30, 30);
+    width: 100vw;
+    padding-left: 2rem;
+    overflow: hidden;
   }
   #toggler {
     display: inline-block;
   }
+  .nav-items {
+    display: block;
+  }
+  .margin-default {
+    margin-top: 11rem;
+    transition: all 0.5s ease;
+  }
 }
 
-.fade-in {
-  transform: translateX(0%);
+.fade-out {
+  transform: translateY(-150%);
 }
 
 .faded-lr {
