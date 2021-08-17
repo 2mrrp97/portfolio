@@ -1,14 +1,6 @@
+/* basic body , html end */
 html {
   scroll-behavior: smooth;
-}
-.about {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  user-select: none;
-  width: 100%;
 }
 body {
   background-color: rgb(255, 247, 247);
@@ -17,6 +9,10 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+/* basic body , html end */
+
+/* nav bar */
 .navbar {
   background-color: rgb(31, 30, 30);
   padding: 20px;
@@ -40,24 +36,17 @@ body {
   margin-left: auto;
 }
 
-.handwrite-font-fam {
-  font-family: "Comfortaa", cursive;
-  letter-spacing: 0.2rem;
-  text-transform: capitalize;
-  font-weight: bolder;
-  color: rgb(218, 218, 218);
-  text-align: center;
-}
-
-.hide {
+#toggler {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
   display: none;
-  transition: display 1s ease;
 }
-
-.inverter {
-  filter: invert(100);
-  padding: 0px;
-  height: 2px;
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  justify-content: space-around;
 }
 
 .lines {
@@ -68,115 +57,9 @@ body {
   margin: 2px;
 }
 
-#toggler {
-  height: 2rem;
-  width: 2rem;
-  margin-right: 1rem;
-  display: none;
-}
+/* nav bar portion end */
 
-.myContainer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 100px auto;
-  width: 100vw;
-  padding: 50px;
-  transition: 0.3s ease;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-#pp {
-  height: 30vh;
-  margin: 20px auto;
-  border-radius: 23% 77% 75% 25% / 53% 31% 69% 47%;
-  outline: none;
-  transition: 0.5s all ease;
-  box-shadow: 1px 10px 5px #f1f1f1;
-  border: 0px;
-}
-
-.seperator {
-  border-top: 5px solid white;
-  border-style: groove;
-  outline: none;
-  display: block;
-  margin: 100px auto;
-  width: 20%;
-}
-.back-to-top {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-.back-to-top a {
-  text-decoration: none;
-  color: blanchedalmond;
-}
-.gifs {
-  margin: 20px auto;
-  user-select: none;
-  pointer-events: none;
-}
-.images {
-  margin: 20px auto;
-  height: 10rem;
-}
-.inner-container {
-  margin: 30px auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.spin {
-  animation-name: spinner;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes spinner {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container-fluid {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0px;
-  width: 100vw;
-  background-color: rgb(31, 30, 30);
-}
-
-.title-container {
-  background-color: rgb(31, 30, 30);
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100vw;
-  min-height: 80vh;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  width: 40vw;
-  justify-content: space-around;
-}
-.margin-default {
-  margin-top: 0rem;
-}
+/*  media query brk pt for navbar and also for pushing body section downwards */
 
 @media (max-width: 1100px) {
   .navbar-nav {
@@ -209,7 +92,88 @@ body {
 .fade-out {
   transform: translateY(-150%);
 }
+/* media query brk pr part end */
 
+/* about portion in heading */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  user-select: none;
+  width: 100%;
+}
+
+.title-container {
+  background-color: rgb(31, 30, 30);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  min-height: 80vh;
+}
+#pp {
+  height: 30vh;
+  margin: 20px auto;
+  border-radius: 23% 77% 75% 25% / 53% 31% 69% 47%;
+  outline: none;
+  transition: 0.5s all ease;
+  box-shadow: 1px 10px 5px #f1f1f1;
+  border: 0px;
+}
+/* about portion in heading end */
+
+/* technology part */
+
+.myContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 100px auto;
+  width: 100vw;
+  padding: 50px;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.gifs {
+  margin: 20px auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+.images {
+  margin: 20px auto;
+  height: 10rem;
+}
+
+.inner-container {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.spin {
+  animation-name: spinner;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .faded-lr {
   opacity: 0;
   min-height: 30%;
@@ -233,20 +197,14 @@ body {
   transform: translateX(0%);
   transition: all 1s ease;
 }
+/* technology part end */
 
+/* project gallery */
 .sliderclass {
   margin: 20px auto;
   overflow: hidden;
   position: relative;
   display: flex;
-}
-
-.faded-img {
-  opacity: 0;
-}
-.active-img {
-  opacity: 1;
-  transition: all 1s ease;
 }
 
 .slider-img {
@@ -304,6 +262,19 @@ body {
   display: flex;
 }
 
+/* project gallery end */
+
+/* contact part + footer */
+.container-fluid {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  width: 100vw;
+  background-color: rgb(31, 30, 30);
+}
+
 .contactform {
   margin: 50px auto;
   display: flex;
@@ -352,6 +323,25 @@ body {
   align-items: center;
 }
 
+/* contact part + footer  end */
+
+/* body section misc */
+
+.seperator {
+  border-top: 5px solid white;
+  border-style: groove;
+  outline: none;
+  display: block;
+  margin: 100px auto;
+  width: 20%;
+}
+.margin-default {
+  margin-top: 0rem;
+}
+
+/* body section misc end */
+
+/* misc */
 .video-container {
   position: fixed;
   top: 0;
@@ -362,7 +352,25 @@ body {
   z-index: -1;
   opacity: 0.9;
 }
-
 .towhite {
   color: black;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.back-to-top a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+.handwrite-font-fam {
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: rgb(218, 218, 218);
+  text-align: center;
 }
