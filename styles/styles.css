@@ -23,7 +23,7 @@ body {
   position: sticky;
   top: 0px;
   width: 100vw;
-  z-index : 999;
+  z-index: 999;
 }
 
 .brand {
@@ -148,6 +148,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 0px;
+  width: 100vw;
   background-color: rgb(31, 30, 30);
 }
 
@@ -237,7 +238,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   box-sizing: border-box;
-  width: 80vw;
+  width: 100%;
   margin: 20px auto;
   min-height: 60vh;
 }
@@ -254,6 +255,7 @@ body {
 }
 #prj-sec {
   background-color: rgb(31, 30, 30);
+  width: 100vw;
 }
 .hide-visit-btn {
   opacity: 0;
@@ -330,4 +332,3 @@ body {
 .towhite {
   color: black;
 }
- 
